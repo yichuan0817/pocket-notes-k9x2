@@ -1,4 +1,4 @@
-const CACHE = 'pocket-guide-enc-v2';
+const CACHE = 'pocket-guide-enc-v3';
 const ASSETS = ['./', './index.html', './manifest.json', './icon.svg', './epub.enc.json'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
